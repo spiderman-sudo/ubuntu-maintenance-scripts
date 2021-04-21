@@ -6,9 +6,9 @@ This repository contains my personal debian ubuntu desktop maintenance scripts T
 
 then save the file.
 
-Feel free to fork or download these scripts and use them as-is or edit them for your own use, I have added the GPL3 licence to comply with sharing requirements and do not claim copyright as most of the information gathered to enable writing them was found on the web.
+Feel free to fork or download these scripts and use them as-is, or edit them for your own use, I have added the GPL3 licence to comply with sharing requirements and do not claim copyright as most of the information gathered to enable writing them was found on the web.
 
-once the PATH variable is set correctly
+once the PATH variable is set correctly simply call the name of the script from a new terminal.
 
 I hope everyone finds these scripts useful and maybe educational too.
 
