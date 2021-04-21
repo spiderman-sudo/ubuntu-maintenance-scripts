@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+sudo pbuilder build ./*.dsc && 
+sudo mv /var/cache/pbuilder/$NAME/result/* ./
+

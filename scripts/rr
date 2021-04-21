@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...remove recursive script...
+#...(be careful when using this it WILL remove EVERYTHING from current directory!!)... 
+sudo rm -R ./* 2>/dev/null
+

@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#####################################################
+# dcfg - script to configure dpkg applications ubuntu
+#####################################################
+sudo dpkg --configure -a

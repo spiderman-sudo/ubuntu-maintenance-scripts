@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+####################################################################################
+### dup (distribution upgrade)                                                   ###
+### a script to update ubuntu applications then clean up cache afterwards        ###
+####################################################################################
+#...
+echo ''
+echo '                                       ......running upgrade script'
+echo ''
+echo '                                            ......updating database'
+echo ''
+sudo apt-get update 2>/dev/null
+echo '                                     ......database update finished'
+echo ''
+echo '                                          ......now to upgrade apps'
+echo ''
+sudo apt-get dist-upgrade -y 2>/dev/null
+echo ''
+echo '                                  ......upgrades complete!'
+echo ''
+

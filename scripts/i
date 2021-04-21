@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...intelligent install script (only updates or installs missing packages, won't downgrade anything)...
+sudo dpkg -i -E -G -R ./ 2>/dev/null
+sudo apt-get --fix-missing --fix-broken --upgrade install
+

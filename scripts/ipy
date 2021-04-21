@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...python3 install script (download package from Pypi, unpack and run)...
+sudo python3 ./setup.py install

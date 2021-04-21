@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+##########################################
+# genb - script to do generic build ubuntu
+##########################################
+#...
+if [ -d "./build" ] 
+then
+	sudo rm -R ./build
+else
+	mkdir -p build
+	cd build
+	../configure --prefix=/usr && 
+	make &&
+	sudo make install
+fi
+

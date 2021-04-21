@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+###################################################################
+### ui - a script to update-initramfs and grub ubuntu
+###################################################################
+sudo update-initramfs -ck all
+sudo update-grub
+echo '   ......updated initramfs and grub'

@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...make-kpkg clean script (clean up after failed kernel build)...
+make-kpkg clean -j42

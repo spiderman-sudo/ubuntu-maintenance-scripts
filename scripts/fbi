@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+##################################################
+# fbi - (script to fix broken applications ubuntu)
+##################################################
+sudo apt-get --fix-missing --fix-broken install -y

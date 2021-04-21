@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...google from terminal...
+w3m google.com

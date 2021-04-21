@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+alien -V
+#...
+echo ''
+echo '      converting .rpm to .deb....'
+echo ''
+#...
+sudo alien --fixperms ./*.rpm
+#...
+echo ''
+echo '      conversion finished.'
+echo ''
+  

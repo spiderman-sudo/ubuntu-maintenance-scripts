@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+############################################################
+# ac (apt-clean) a script to delete cached apt-get downloads  
+############################################################
+#...
+sudo apt clean &&
+echo '         ......cleaning /var/cache/apt/archives finished !'
+

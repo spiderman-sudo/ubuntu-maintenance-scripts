@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#################################################################################################
+# cpd - script to copy -> /var/cache/apt/archives - to current directory location & clean cache # #################################################################################################
+cp /var/cache/apt/archives/*.deb ./ && cp /var/cache/apt/archives/*.deb ./ 
+echo '            copying of  ...../var/cache/apt/archives/.deb files finished'
+echo '' 
+echo '                                         .....now to clean up cache'
+echo '' 
+sudo apt clean && 
+echo '                                             .....cleanup complete!'
+echo '' 
+

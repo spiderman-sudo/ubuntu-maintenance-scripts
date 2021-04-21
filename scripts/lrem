@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...remove apt locks script...
+echo ''
+echo '                                       ...removing /var/lib/apt/lists/lock'
+echo ''   
+sudo rm /var/lib/apt/lists/lock
+echo ''
+echo '                                  ...removing /var/cache/apt/archives/lock'
+echo ''
+sudo rm /var/cache/apt/archives/lock
+echo ''
+echo '                                            ...removing /var/lib/dpkg/lock'
+echo ''
+sudo rm /var/lib/dpkg/lock
+echo ''

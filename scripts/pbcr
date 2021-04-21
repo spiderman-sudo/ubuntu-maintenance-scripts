@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...pbuilder base.tar.gz creation script hirsute...
+sudo pbuilder create --distribution hirsute proposed 

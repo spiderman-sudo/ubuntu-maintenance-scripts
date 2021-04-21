@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...build .deb package script...
+time dpkg-buildpackage -rfakeroot -us -uc -b -d

@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...list all apt packages on hold...
+apt-mark showhold
+#...
+echo ''
+#...
+dpkg -l | grep "^hi"

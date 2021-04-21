@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...apt autoremove script...
+sudo apt autoremove -y 2>/dev/null

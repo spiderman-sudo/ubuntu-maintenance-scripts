@@ -1,0 +1,54 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#####################################################################################
+#...fix and configure script... by <spiderman-sudo@neighbourhoodwebslinger.gmail.com> 
+#####################################################################################
+echo ''
+echo ''
+echo ' Is it broken...'
+echo '                        ...never mind, think I can fix it'
+echo '' 
+echo '                           ...running fix and configure script'
+echo ''
+echo ''
+echo '                     step 1 ...kill all running apt tasks if any exist'
+echo ''
+sudo killall apt apt-get
+echo ''
+echo '                      step 2 ...now remove any locked files if any exist'
+echo ''
+echo '                                       ...removing /var/lib/apt/lists/lock'
+echo ''   
+sudo rm /var/lib/apt/lists/lock
+echo ''
+echo '                                  ...removing /var/cache/apt/archives/lock'
+echo ''
+sudo rm /var/cache/apt/archives/lock
+echo ''
+echo '                                           ...removing /var/lib/dpkg/lock*'
+echo ''
+sudo rm /var/lib/dpkg/lock*
+echo ''
+echo '                               step 3  ...reconfigure packages if needed'
+echo ''
+sudo dpkg --configure -a
+echo '                               step 4   ...delete old > /var/lib/apt/lists'
+sudo rm -rf /var/lib/apt/lists/*
+echo ''
+echo '                               step 5                   ...renew apt/cache'
+echo '' 
+sudo apt update
+echo ''
+echo '                               step 6    ...fetch and install all upgrades'
+echo ''
+sudo apt-get -o Dpkg::Progress-Fancy="1" dist-upgrade -y
+echo ''
+echo '                               step 7     ...remove any un-needed packages'
+echo ''
+sudo apt -o Dpkg::Progress-Fancy="1" autoremove -y
+echo ''
+echo '                                 ...should be sorted now'
+echo ''
+echo '                                     ...script by <spiderman-sudo@neighbourhoodwebslinger.gmail.com>'

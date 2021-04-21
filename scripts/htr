@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...clean home hidden trash files script...
+#...
+echo '       cleaning hidden trash files...'
+cd ~/.local/share/Trash/expunged &&
+rm -R && rm -R
+echo ''
+echo '                 cleaning complete...'
+echo ''
+

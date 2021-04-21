@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...script to reload font cache after new font install...
+sudo fc-cache -f -v

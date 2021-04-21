@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...kernel package short start script (used when kernel directory already configured for build)...
+make oldconfig && fakeroot -u make-kpkg --initrd kernel_image kernel_headers

@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+###########################################################
+# kp -- make debian kernel package script (using make-kpkg)
+###########################################################
+#...build with current boot config (using fakeroot)...
+cp /boot/config-$(uname -r) .config && yes '' | make oldconfig &&
+fakeroot -u make-kpkg --initrd kernel_image kernel_headers
+

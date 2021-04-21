@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...ldconfig script (update system info after new build/install of binaries)...
+sudo ldconfig /usr/lib
+sudo ldconfig /usr/local/lib

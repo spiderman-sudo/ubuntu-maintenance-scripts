@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+#...
+sudo qemu-system-x86_64 -cdrom *.iso -m 2048

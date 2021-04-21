@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+echo "====== Current (Old) Swapfile Info ======"
+sudo swapon --show
+#...
+sudo free -h
+#...
+echo "====== Turning Off (Old) Swapfile ======"
+sudo swapoff -v /swapfile
+#...
+echo "====== Allocating (New) 4GB Swapfile ======"
+sudo fallocate -l 4G /swapfile
+#...
+echo "====== Setting (New) Swapfile Permissions ======"
+sudo chmod 600 /swapfile
+#...
+sudo mkswap /swapfile
+#...
+echo "====== Turning On (New) Swapfile ======"
+sudo swapon /swapfile
+#...
+echo "====== (New) Swapfile Info ======"
+sudo swapon --show
+#...
+sudo free -h
+echo "====== New Swapfile Succesfully Created ! ======"
+#...
