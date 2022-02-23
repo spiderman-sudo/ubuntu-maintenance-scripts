@@ -1,6 +1,9 @@
 # ubuntu-maintenance-scripts
 
-This repository contains my personal debian ubuntu desktop maintenance scripts To use simply create a bin folder in /home/{user} folder and place them there and add the new bin folder to PATH. to do this open .bashrc file in your home directory with gedit, nano etc... and add the next line to it (without the quotes)
+This repository contains my debian/ubuntu desktop maintenance scripts,
+To use simply create a folder /home/{user}/bin  -  place the scripts in folder /home/{user}/bin 
+and add the new /home/{user}/bin folder to PATH... to add to path,
+open .bashrc file in your home directory with gedit, nano etc... and add the next line to it (without the quotes)
 
 "export PATH:~/bin:${PATH}"
 
